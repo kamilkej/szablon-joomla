@@ -1,0 +1,172 @@
+html {
+	--lightBlue: #c7daf1;
+	--midGradBlue1: #73A1E6;
+	--midGradBlue2: #23539D;
+	--darkBlue: #224271;
+}
+BODY {
+	background: #e4ebe9 url(http://zsegw.pl/templates/inthewild/css/../images/fancy_deboss.png) repeat top left;
+	font-family: Lato, Trebuchet MS, Verdana, sans-serif;
+	font-size: 10px;
+	margin: 0;
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"nav slider info"
+		"art art art"
+		"partners partners partners"
+		"footer footer footer"
+	;
+	grid-template-columns: 30% 40% 30%;
+}
+body > header {
+	grid-area: header;
+	background-color: var(--darkBlue);
+	background-image: url("http://zsegw.pl/templates/inthewild/css/../images/bkg_header.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 260px;
+}
+.hdr h3 {
+	background-color: var(--midGradBlue1);
+	background-image: linear-gradient( var(--midGradBlue1), var(--midGradBlue2) );
+	border: solid 2px #fff;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 1rem;
+	margin: 1rem 0;
+	padding: .4rem 0;
+	text-align: center;
+}
+nav {
+	grid-area: nav;
+	background-color: var(--lightBlue);
+	font-size: 1.2rem;
+	
+	/* width: 30%;*/
+}
+nav a {
+	color: #0b5ee0;
+	text-decoration: none;
+}
+/* ### SLIDER ### */
+#slider {
+	position: relative;
+	grid-area: slider;
+	height: 300px;
+	overflow: hidden;
+}
+#nav-dots {
+	position: absolute;
+	top: .9rem;
+	left: 0;
+	text-align: center;
+	height: 50px;
+	width: 100%;
+}
+#nav-dots span {
+	background-image: linear-gradient( var(--midGradBlue1), var(--midGradBlue2) );
+	border: solid 2px #fff;
+	border-radius: 1rem;
+	font-size: 1px;
+	line-height: 1px;
+	padding: .7rem .8rem;
+	margin: 0 .25rem;
+}
+/* ### INFORMACJE ### */
+#info {
+	grid-area: info;
+	padding: 0 1rem;
+}
+#info ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+#info li {
+	border-left: solid 5px rgb(204,40,0);
+	font-size: 1rem;
+	padding-left: .6rem;
+	margin: .5rem 0;
+	
+}
+nav, #slider, #info {
+	background-color: var(--lightBlue);
+	height: 320px;
+}
+body > main {
+	grid-area: art;
+	height: 115px;
+	overflow: hidden;
+}
+body > main:focus,
+body > main:hover {
+	height: auto;
+}
+body > main + section { grid-area: partners; }
+/* ### FOOTER ### */
+body > footer {
+	background-color: var(--darkBlue);
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	font-size: 1rem;
+	grid-area: footer;
+	align-content: top;
+	justify-content: center;
+	min-height: 260px;
+}
+body > footer section {
+	width: 18vw;
+}
+footer h3 {
+	color: var(--lightBlue);
+	text-decoration: none;
+}
+footer a {
+	color: var(--midGradBlue1);
+}
+footer ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+footer li {
+	border-left: solid 2px var(--lightBlue);
+	padding-left: 1rem;
+	margin: .5rem 0;
+}
+footer li p { 	margin: 0; }
+footer li p + p { 	text-indent: 2rem; }
+footer .map {
+	position: relative;
+	margin: 1rem .5rem;
+	overflow: hidden;
+	height: 200px;
+	width: 260px;
+}
+footer .map > img {
+	position: absolute;
+	top: -280px;
+	left: -320px;	
+}
+/* ### GRID ### */
+.g1 { width: 6vw; }
+.g2 { width: 12.25vw; }
+.g3 { width: 18.50vw; }
+.g4 { width: 24vw; }
+.g5 { width: 30vw; }
+.g6 { width: 36vw; }
+.g7 { width: 42vw; }
+.g8 { width: 48vw; }
+.g9 { width: 54vw; }
+.g10 { width: 60vw; }
+.g11 { width: 66vw; }
+.g12 { width: 72vw; }
+.g13 { width: 78vw; }
+.g14 { width: 84vw; }
+.g15 { width: 90vw; }
+.g16 { width: 96vw; }
+.g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8,
+.g9, .g10, .g11, .g12, .g13, .g14, .g15, .g16 {
+	margin-left: 0.125vw;
+	margin-right: 0.125vw;
+}

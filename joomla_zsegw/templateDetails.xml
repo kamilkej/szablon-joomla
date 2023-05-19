@@ -1,0 +1,28 @@
+<extension version="3.0" type="template" client="site" method="upgrade">
+	<name>zse-theme</name>
+	<version>1.0</version>
+	<creationDate>2023-02</creationDate>
+	<author>Uczniowie ZSE</author>
+	<authorEmail>e-lemingi.zsegw@gmail.com</authorEmail>
+	<copyright>(C) 2023 Zespół Szkół Elektrycznych w Gorzowie Wielkopolskim</copyright>
+	<description>Tworzymy, bo możemy (nieprawda, bo musimy; no dobra, bo się uczymy)</description>
+	<inheritable>1</inheritable>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>config</folder>
+		<folder>css</folder>
+		<folder>html</folder>
+	</files>o
+	<positions>
+		<position>zse_header</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/tpl_zse.ini</language>
+		<language tag="en-GB">en-GB/tpl_zse.sys.ini</language>
+	</languages>
+	<config>
+	</config>
+</extension>
